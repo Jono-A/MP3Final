@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1065868581487",
+    "project_id": "mp3cash-b6357",
+    "storage_bucket": "mp3cash-b6357.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065868581487:android:852c2e3aecc65b66e9cb9a",
+        "android_client_info": {
+          "package_name": "com.example.MP3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwUXDv5GO0G0obNxlO4oA-c-NPBC8NrlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

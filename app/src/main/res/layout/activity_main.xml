@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_toolbar"
+    android:layout_gravity="center"
+    tools:context="com.example.MP3.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/cv_1"
+        android:layout_width="370dp"
+        android:layout_height="410dp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="86dp"
+        app:cardCornerRadius="35dp"
+        android:elevation="20dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/cv_2">
+            <TextView
+                android:id="@+id/tv_hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="40dp"
+                android:textSize="25sp"/>
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginStart="40dp"
+                android:textSize="30sp"/>
+            </LinearLayout>
+                <ImageButton
+                    android:id="@+id/btn_qr"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/baseline_qr_code_24"
+                    android:background="@color/transparent"/>
+
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_2"
+                android:layout_width="320dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="102dp"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:outlineProvider="bounds"
+                    android:text="@string/php"
+                    android:textSize="42sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_currentBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:outlineProvider="bounds"
+                    android:textSize="42sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="85dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:outlineProvider="bounds"
+                    android:text="@string/balance"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/bttn_add_Value"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_image_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/baseline_add_card_24"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_qr_scanner"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/bg_image_button"
+                android:src="@drawable/baseline_qr_code_scanner_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/bttn_add_Value"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:text="@string/logout"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_button"
+        android:layout_marginBottom="50dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
