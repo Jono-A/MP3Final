@@ -29,33 +29,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="290dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintBottom_toTopOf="@id/cv_2">
-            <TextView
-                android:id="@+id/tv_hello"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/hello"
-                android:textColor="@color/white"
-                android:fontFamily="@font/montserrat_regular"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="40dp"
-                android:textSize="25sp"/>
-            <TextView
-                android:id="@+id/tv_username"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:fontFamily="@font/montserrat_regular"
-                android:layout_marginStart="40dp"
-                android:textSize="30sp"/>
-            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/cv_2">
+                    <TextView
+                        android:id="@+id/tv_hello"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Good Day!"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/montserrat_regular"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="40dp"
+                        android:textSize="25sp"/>
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:layout_marginStart="40dp"
+                        android:textSize="30sp"/>
+                </LinearLayout>
                 <ImageButton
                     android:id="@+id/btn_qr"
                     android:layout_width="70dp"
@@ -67,7 +67,7 @@
             </LinearLayout>
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv_2"
-                android:layout_width="320dp"
+                android:layout_width="300dp"
                 android:layout_height="120dp"
                 android:layout_marginTop="102dp"
                 android:backgroundTint="@color/transparent"
@@ -110,27 +110,30 @@
                     android:textColor="@color/white"/>
             </androidx.cardview.widget.CardView>
 
-            <androidx.appcompat.widget.AppCompatImageButton
+            <Button
                 android:id="@+id/bttn_add_Value"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/bg_image_button"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:src="@drawable/baseline_add_card_24"
-                android:layout_marginStart="25dp"
-                android:layout_marginBottom="20dp" />
+                android:text="Send Money"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="50dp" />
 
-            <androidx.appcompat.widget.AppCompatImageButton
+            <Button
                 android:id="@+id/btn_qr_scanner"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/bg_image_button"
-                android:src="@drawable/baseline_qr_code_scanner_24"
+                android:text="Scan QR Code"
+                android:fontFamily="@font/montserrat_bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/bttn_add_Value"
-                android:layout_marginStart="20dp"
-                android:layout_marginBottom="20dp" />
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="50dp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
