@@ -70,7 +70,7 @@
                 android:layout_width="320dp"
                 android:layout_height="120dp"
                 android:layout_marginTop="102dp"
-                android:backgroundTint="@color/blue"
+                android:backgroundTint="@color/transparent"
                 app:cardCornerRadius="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
