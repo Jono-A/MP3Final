@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                 binding.tvUsername.text = "${state.user?.name}"
                 binding.tvCurrentBalance.text = "${state.user?.balance}"
             }
-            AuthenticationStates.Error -> TODO()
+            AuthenticationStates.Error -> {}
             AuthenticationStates.LogOut -> {
                 LoginActivity.launch(this@MainActivity)
                 finish()
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 LoginActivity.launch(this@MainActivity)
                 finish()
             }
-            AuthenticationStates.VerificationEmailSent -> TODO()
+            AuthenticationStates.VerificationEmailSent -> {}
             else -> {}
         }
     }
