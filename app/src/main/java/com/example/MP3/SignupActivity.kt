@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.MP3.databinding.ActivitySignupBinding
 
 class SignupActivity : AppCompatActivity() {
@@ -22,8 +23,8 @@ class SignupActivity : AppCompatActivity() {
         }
         binding.bttnSigup.setOnClickListener {
             viewModel.signUp(binding.etEmail.text.toString(), binding.etPassword.text.toString(),)
-            val intent = Intent(this@SignupActivity, LoginActivity::class.java)
-            startActivity(intent)
+            /*val intent = Intent(this@SignupActivity, LoginActivity::class.java)
+            startActivity(intent)*/
         }
 
     }
@@ -32,11 +33,14 @@ class SignupActivity : AppCompatActivity() {
 
     private fun handleState(state : AuthenticationStates) {
         when(state) {
-            is AuthenticationStates.SignedUp -> viewModel.createUserRecord(
-                binding.etName.text.toString(),
-                binding.etEmail.text.toString(),
-                0.00,
-            )
+            is AuthenticationStates.SignedUp -> {
+                Toast.makeText( this@SignupActivity, "Signed In!", Toast.LENGTH_SHORT).show()
+                viewModel.createUserRecord(
+                    binding.etName.text.toString(),
+                    binding.etEmail.text.toString(),
+                    0.00,
+                )
+            }
             is AuthenticationStates.ProfileUpdated -> {
                 MainActivity.launch(this@SignupActivity)
                 finish()

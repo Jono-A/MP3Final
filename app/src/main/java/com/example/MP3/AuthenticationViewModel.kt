@@ -49,7 +49,7 @@ class AuthenticationViewModel : ViewModel() {
             }
 
         }
-        ref.child("MP3/users/" + auth.currentUser?.uid).addValueEventListener(objectListener)
+        ref.child("/MP3/users/" + auth.currentUser?.uid).addValueEventListener(objectListener)
     }
 
         fun updateUserProfile(newName : String) {
